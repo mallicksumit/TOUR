@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="#0000ff"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Login"
+        android:layout_width="157dp"
+        android:layout_height="134dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:src="@drawable/ic_account_circle_black_24dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="349dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/edt"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:hint="Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/Phn"
+        android:layout_width="354dp"
+        android:background="@drawable/edt"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="184dp"
+        android:drawableLeft="@drawable/phn"
+        android:hint=" Mobile"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="349dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/name"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/edt"
+        android:drawableLeft="@drawable/email"
+        android:hint=" Email Id "
+        android:inputType="text|textEmailAddress" />
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/button"
+        android:text="SUBMIT" />
+
+
+</RelativeLayout>
